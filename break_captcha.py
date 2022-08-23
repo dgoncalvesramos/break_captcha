@@ -35,7 +35,6 @@ def process_captcha(captcha):
 	str_captcha = pytesseract.image_to_string('final_captcha.png')
 	str_strip_captcha = ""
 	i=0
-	print(str_captcha)
 	while(i<12) :
 		str_strip_captcha += str_captcha[i]
 		i+=1
